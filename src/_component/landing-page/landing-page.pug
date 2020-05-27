@@ -2,10 +2,11 @@
   var myFullName = 'Mihaela Chetran'
   var myJobTitle = 'Junior Web Developer'
   var socialList = [
-    {icon: 'linkedin', url: 'https://linkedin.com/mihaelachetran'},
+    {icon: 'linkedin', url: 'https://www.linkedin.com/in/mihaelachetran/'},
     {icon: 'github', url: 'https://github.com/mihaelachetran'},
     {icon: 'skype', url: 'https://skype.com/mihaelachetran'},
-    {icon: 'facebook2', url: 'https://facebook.com/mihaela.chetran.7'},
+    {icon: 'stackoverflow', url: 'https://stackoverflow.com/users/13576807/mihaela-chetran'},
+    {icon: 'facebook2', url: 'https://facebook.com/mihaela.chetran.7'}
   ]
 #landing-page
 .landing-page
@@ -13,7 +14,17 @@
     h1.landing-page__name=myFullName
     h2.lading-page__title=myJobTitle
     ul.landing-page__social
-      each social in socialList
+      each social, key in socialList
         li.landing-page__item
-          label.landing-page__label(for="")
+          label.landing-page__label(for=`message-box-id-${key}`)
             span(class=`my-cv__icon--${social.icon}`)
+    .landing-page__box-body
+      input.landing-page__box-radio(type="radio", name="same-name", checked, id="default-message-radio")
+      .landing-page__box-message Click the above icons to reveal
+      .landing-page__box-header
+        .landing-page__box-info Click to visit
+        label.landing-page__box-close(for="default-message-radio") &times;
+      each social, key in socialList
+        input.landing-page__box-radio(type="radio", name="same-name", id=`message-box-id-${key}`)
+        .landing-page__box-message
+          a.landing-page__box-link(href=social.url, target="_blank")=social.url 
