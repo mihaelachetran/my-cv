@@ -1,0 +1,35 @@
+.landing-page {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(#21b4e2, #29b8e5, #71ceef);
+}
+
+.landing-page__wrapper {
+  text-align: center;
+}
+
+.landing-page__name {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+.landing-page__title {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.landing-page__social {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.landing-page__label {
+  color: rgb(193, 231, 248);
+  padding: 0.1rem 0.3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
