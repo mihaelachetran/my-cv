@@ -1,1 +1,46 @@
-#about-me Hi
+//- - data come here
+-
+  var header = '#about-me'
+  var imagePath = "asset/image/mihaela-chetran-avatar.jpg"
+  var myFullName = "Mihaela Chetran"
+  var myTitle = "Junior Web Developer"
+  var slogan = "“I am passionate about what I do and always give 100%”."
+  var achievement = {
+    title: 'Achievement',
+    content: 'Working and learning along with other students, I have managed to progress from starter to junior in less than a month, gaining new skills and experiences with every day.'
+  }
+
+  var coolStuff = {
+    title: 'grabcoolStuff',
+    buttonList: [
+      {
+        url: 'https://github.com/mihaelachetran',
+        icon: 'github',
+        label: 'Click to visit the GitHub project source'
+      },
+      {
+        url: "asset/content/Mihaela Chetran - CV 2020 - JWD.docx",
+        icon: "file-word",
+        label: 'Click to download the Microsoft Word version'
+      }
+    ]
+  }
+//- - the view comes here
+#about-me 
+.about-me
+  .about-me__header=header
+  .about-me__avatar-wrapper
+    img.about-me__avatar(src=imagePath)
+  .about-me__full-name=myFullName
+  .about-me__full-title=myTitle
+  .about-me__slogan=slogan
+
+  .about-me__title=achievement.title
+  .about-me__content=achievement.content
+
+  .about-me__title-coolStuff.title
+  .about-me__link-list
+    each button in coolStuff.buttonList
+      a(href=button.url)
+        span=button.label
+        span(class=`.my-cv__icon--${button.icon}`)
