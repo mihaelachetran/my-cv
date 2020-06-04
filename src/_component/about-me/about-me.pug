@@ -1,17 +1,17 @@
 //- - data come here
 -
-  var header = '#about-me'
+  var header = '#about me'
   var imagePath = "asset/image/mihaela-chetran-avatar.jpg"
   var myFullName = "Mihaela Chetran"
   var myTitle = "Junior Web Developer"
   var slogan = "“I am passionate about what I do and always give 100%”."
   var achievement = {
-    title: 'Achievement',
+    title: 'achievement',
     content: 'Working and learning along with other students, I have managed to progress from starter to junior in less than a month, gaining new skills and experiences with every day.'
   }
 
   var coolStuff = {
-    title: 'grabcoolStuff',
+    title: 'grab cool Stuff',
     buttonList: [
       {
         url: 'https://github.com/mihaelachetran',
@@ -19,7 +19,7 @@
         label: 'Click to visit the GitHub project source'
       },
       {
-        url: "asset/content/Mihaela Chetran - CV 2020 - JWD.docx",
+        url: "asset/doc/Mihaela Chetran - CV 2020 - JWD.docx",
         icon: "file-word",
         label: 'Click to download the Microsoft Word version'
       }
@@ -38,9 +38,11 @@
   .about-me__title=achievement.title
   .about-me__content=achievement.content
 
-  .about-me__title-coolStuff.title
+  .about-me__title=coolStuff.title
   .about-me__link-list
-    each button in coolStuff.buttonList
-      a(href=button.url)
-        span=button.label
-        span(class=`.my-cv__icon--${button.icon}`)
+      each button in coolStuff.buttonList
+        a(href=button.url)
+        .about-me__link
+          span=button.label
+            span(class="about-me__link-description")
+            span(class=`my-cv__icon--${button.icon}`)
