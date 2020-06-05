@@ -8,3 +8,53 @@
   background-image: linear-gradient(to bottom, #99ccff 0%, #ff99cc 100%);
   margin-top: 4px;
 }
+
+.achievement__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.achievement__card {
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-bottom: 0.2rem solid #9fbfdf;
+  display: flex;
+  flex-wrap: wrap;
+  
+  &>div {
+    border-top: 0.2rem solid #9fbfdf;
+  }
+
+
+.achievement__icon {
+  width: 25%;
+  font-size: 2.5rem;
+  padding: 2.5rem;
+  color: #9fbfdf ;
+}
+
+  &>div:nth-child(even) {
+    width: 75%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  &>div:nth-child(1) {
+    background-color: #42BCBD;
+  }
+
+  &>div:nth-child(3) {
+    background-color: #D47494;
+  }
+
+  &>div:nth-child(5) {
+    background-color: #714693;
+  }
+
+  &>div:nth-child(7) {
+    background-color: #E9D75A;
+  }
+}

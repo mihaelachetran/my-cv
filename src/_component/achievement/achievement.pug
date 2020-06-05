@@ -3,13 +3,13 @@
   var achievementList = [
       {
         title: 'University of Sussex',
-        description: 'Graduated BA (HONS) Business Suite 2:1 – Finance, Marketing, Management',
+        description: 'Graduated - BA (HONS) Business Suite 2:1 – Finance, Marketing, Management',
         location: 'University Centre Croydon - London',
         date: '2017 '
       },
       {
         title: 'Learndirect',
-        description: 'Graduated Level 2 Certificate in English Skills',
+        description: 'Graduated - Level 2 Certificate in English Skills',
         location: 'Norbury - London',
         date: '2013 '
       }
@@ -23,12 +23,15 @@
       .achievement__icon
         span.my-cv__icon--trophy
       .achievement__title=achievement.title
+
       .achievement__icon
         span.my-cv__icon--info
       .achievement__description=achievement.description
+
       .achievement__icon
         span.my-cv__icon--map2
       .achievement__location=achievement.location
+      
       .achievement__icon
         span.my-cv__icon--calendar
       .achievement__date=achievement.date
