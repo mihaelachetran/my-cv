@@ -11,11 +11,9 @@
 }
 
 .about-me__header {
-  color: #0d0e63;
   text-shadow: 3px 3px #3399ff;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  padding: 1rem 3rem;
+  color: #0d0e63;
+  @extend %header;
 }
 
 .about-me__avatar-wrapper {
@@ -55,6 +53,7 @@
   color: #c1e8fa;
   padding: 0 1rem 2rem;
   text-align: center;
+  text-shadow: 2px 2px #368fe9;
 }
 
 .about-me__slogan,
@@ -62,20 +61,21 @@
   font-size: 1.7rem;
   text-align: justify;
   padding: 1rem;
-  text-indent: 3rem;
+  text-indent: 2rem;
   color: #0d0e63;
 }
 
 .about-me__link-list {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .about-me__link {
   display:inline-block;
-  width: 80%;
-  font-size: 2rem;
+  width: 90%;
+  font-size: 2.5rem;
   text-decoration: none;
-  border: 0.3rem solid #c1e8fa;
+  border: 0.4rem solid #c1e8fa;
   border-radius: 1.5rem;
   background-color: ivory;
   color: #0d0e63;
@@ -83,7 +83,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .about-me__link-description {

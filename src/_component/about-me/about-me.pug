@@ -21,7 +21,7 @@
       {
         url: "asset/doc/Mihaela Chetran - CV 2020 - JWD.docx",
         icon: "file-word",
-        label: 'Click to download the Microsoft Word version'
+        label: 'Click to download the Microsoft Word'
       }
     ]
   }
@@ -40,9 +40,7 @@
 
   .about-me__title=coolStuff.title
   .about-me__link-list
-      each button in coolStuff.buttonList
-        a(href=button.url)
-        .about-me__link
-          span=button.label
-            span(class="about-me__link-description")
-            span(class=`my-cv__icon--${button.icon}`)
+    each button in coolStuff.buttonList
+      a.about-me__link(href=button.url)
+        span.about-me__link-description=button.label
+        span(class=`my-cv__icon--${button.icon}`)
