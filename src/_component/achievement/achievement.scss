@@ -1,10 +1,10 @@
-.award__header {
+.achievement__header {
   text-shadow: 3px 3px #3399ff;
   color: #0d0e63;
   @extend %header;
 }
 
-.award {
+.achievement {
   background-image: linear-gradient(to bottom, #99ccff 0%, #ff99cc 100%);
   margin-top: 4px;
 }
