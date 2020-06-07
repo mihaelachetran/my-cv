@@ -1,6 +1,6 @@
 .about-me {
   background-image: linear-gradient(to bottom, #3bbcfc 40%, #3399ff 100%);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 
@@ -11,7 +11,7 @@
 }
 
 .about-me__header {
-  text-shadow: 3px 3px #3399ff;
+  text-shadow: 2px 2px #3399ff;
   color: #0d0e63;
   @extend %header;
 }
@@ -75,8 +75,8 @@
   width: 90%;
   font-size: 2.5rem;
   text-decoration: none;
-  border: 0.4rem solid #c1e8fa;
-  border-radius: 1.5rem;
+  border: 0.3rem solid #c1e8fa;
+  border-radius: 1rem;
   background-color: ivory;
   color: #0d0e63;
   margin: 1rem auto;
