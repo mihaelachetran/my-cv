@@ -1,0 +1,18 @@
+.experience__header {
+  text-shadow: 2px 2px #3399ff;
+  color: #0d0e63;
+  @extend %header;
+}
+
+.experience {
+  background-image: linear-gradient(to bottom, #99ccff 0%, #95c8fc 100%);
+  margin-top: 2px;
+}
+
+.experience__details {
+  display: none;
+}
+
+.experience__input:checked + .experience__title + .experience__details {
+  display: inherit;
+}

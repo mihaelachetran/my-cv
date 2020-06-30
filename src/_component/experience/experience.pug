@@ -5,58 +5,73 @@
   var experienceList = [
     {
       title: 'Student and part-time at CodeTap Academy (online)',
-      data: 'November 2019 – Current',
+      date: 'November 2019 – Current',
       company: 'CodeTap Academy',
       responsibilityList: [
-        'Contributing to developing web pages using mainly technologies like HTML, CSS, PUG, SASS and JavaScript but experiencing also React to deliver outstanding front-end services to clients',
-        'Using JavaScript and CSS3 to improve page speed load and user experience',
-        'Working and learning along with other students, as well as helping each other on improving current aptitudes and gaining new skills',
+        '• Contributing to developing web pages using mainly technologies like HTML, CSS, PUG, SASS and JavaScript but experiencing also React to deliver outstanding front-end services to clients',
+        '• Using JavaScript and CSS3 to improve page speed load and user experience',
+        '• Working and learning along with other students, as well as helping each other on improving current aptitudes and gaining new skills',
       ]
     },
     {
       title: 'Account Manager',
-      data: 'March 2020 – April 2020 – laid off due to COVID-19',
+      date: 'March 2020 – April 2020 – laid off due to COVID-19',
       company: 'LRG International',
       responsibilityList: [
-        'Dealing with a wide range of merchandise every day and existing clients, as well as generating further interest from clients and prospects by coming forward with new product ideas',
-        'Generating invoices through the Promotional Office (PO) software, as well as overseeing the administration of all the sales processes',
-        'Handling client’s account and projects or issues that might be relative to the client',
+        '• Dealing with a wide range of merchandise every day and existing clients, as well as generating further interest from clients and prospects by coming forward with new product ideas',
+        '• Generating invoices through the Promotional Office (PO) software, as well as overseeing the administration of all the sales processes',
+        '• Handling client’s account and projects or issues that might be relative to the client',
       ]
     },
     {
       title: 'Customer Account Manager',
-      data: 'September 2017- March 2020',
+      date: 'September 2017- March 2020',
       company: 'IBB International Bullion',
       responsibilityList: [
-        'Assisting with product merchandising online by developing and implementing effective promotional strategies to increase profit across all channels (Retail, Web, B2B, B2C and Inbound)',
-        'Updating/Uploading new product information which includes revising price, contents and terms on company’s platform',
-        'General administration tasks related to the above which are included in handling client account and projects or issues that might be relative to the client',
+        '• Assisting with product merchandising online by developing and implementing effective promotional strategies to increase profit across all channels (Retail, Web, B2B, B2C and Inbound)',
+        '• Updating/Uploading new product information which includes revising price, contents and terms on company’s platform',
+        '• General administration tasks related to the above which are included in handling client account and projects or issues that might be relative to the client',
       ]
     },
     {
       title: 'Personal Shopper and Admin Assistant',
-      data: 'September 2008–August 2017 (September 2014–September 2017: Part time)',
+      date: 'September 2008–August 2017 (September 2014–September 2017: Part time)',
       company: 'Lucindas Dress Boutique',
       responsibilityList: [
-        'Marketing PR calls to promote the company and its products, maximising business chances and building new relationships',
-        'Provide expert advice on trends and give the highest level of personal service for customers with an advanced knowledge of products',
-        'Deliver sales targets and ensure the best possible service to customers',
+        '• Marketing PR calls to promote the company and its products, maximising business chances and building new relationships',
+        '• Provide expert advice on trends and give the highest level of personal service for customers with an advanced knowledge of products',
+        '• Deliver sales targets and ensure the best possible service to customers',
       ]
     },
     {
       title: 'PA to Managing Director',
-      data: 'January 2007 – January 2008',
+      date: 'January 2007 – January 2008',
       company: 'Eurowear Impex',
       responsibilityList: [
-        'Managing diaries and organising meetings and appointments',
-        'Receive, record and distribute factory correspondence, as well as keeping visitors log in accordance with legal requirements and act as a first point of contact',
-        'General office management and reception duties including managing the switchboard, arranging meetings, document managing and management of general administration',
+        '• Managing diaries and organising meetings and appointments',
+        '• Receive, record and distribute factory correspondence, as well as keeping visitors log in accordance with legal requirements and act as a first point of contact',
+        '• General office management and reception duties including managing the switchboard, arranging meetings, document managing and management of general administration',
       ]
     }
   ];
 
   //- - view, presentation
+  //- -CSS "+" :checked
+  //- input
+  //- controlled container (div, or whatever)
 
 #experience
 .experience
   .experience__header=header
+  input(type="radio", name="same-name", id="experience-default")
+  label(for="experience-default") &times;
+  each experience, key in experienceList
+    input.experience__input(type="radio", name="same-name", id=`experience-id-${key}`)
+    label.experience__title(for=`experience-id-${key}`)=experience.title
+    .experience__details
+      .experience__top
+        .experience__date=experience.date
+        .experience__company=experience.company
+      .experience__list
+        each responsibility in experience.responsibilityList
+          .experience__responsibility=responsibility
