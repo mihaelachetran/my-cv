@@ -9,10 +9,71 @@
   margin-top: 2px;
 }
 
-.experience__details {
+.experience__details,
+.experience__input {
   display: none;
 }
 
 .experience__input:checked + .experience__title + .experience__details {
   display: inherit;
+}
+
+.experience__title {
+  color: #0d0e63;
+  display: block;
+  border: 0.2rem solid #c1e8fa;
+  border-radius: 0.5rem;
+  background-color: ivory;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.experience__details {
+  border: 0.2rem solid #c1e8fa;
+  border-radius: 0.5rem;
+}
+
+.experience__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.experience__company,
+.experience__date {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #0d0e63;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline solid #c1e8fa;
+}
+
+.experience__responsibility {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #0d0e63;
+  line-height: 1.2;
+
+  &:nth-child(odd) {
+    background-color: #ff99cc;
+  }
+
+  &:nth-child(even) {
+    background-color: #99ccff;
+  }
+}
+
+.my-cv__icon--plus {
+  float: right;
+  pointer-events: none;
+}
+
+.experience__input:checked + .experience__title {
+  .my-cv__icon--plus {
+    transform: rotateZ(45deg);
+    pointer-events: all;
+    cursor: pointer;
+  }
 }
