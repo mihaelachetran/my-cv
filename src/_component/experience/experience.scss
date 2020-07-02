@@ -21,12 +21,12 @@
 .experience__title {
   color: #0d0e63;
   display: block;
-  border: 0.2rem solid #c1e8fa;
-  border-radius: 0.5rem;
-  background-color: ivory;
-  font-size: 1.7rem;
+  border: 0.5rem solid #c1e8fa;
+  background-color: #87c1fa;
+  font-size: 1.3rem;
   padding: 0.5rem;
   cursor: pointer;
+  text-shadow: 0.7px 0.7px #3399ff;
 }
 
 .experience__details {
@@ -58,6 +58,7 @@
 
   &:nth-child(odd) {
     background-color: #ff99cc;
+    border-radius: 0.5rem;
   }
 
   &:nth-child(even) {

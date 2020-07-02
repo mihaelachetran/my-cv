@@ -1,0 +1,22 @@
+.menu {
+  padding: 2rem;
+  // background-color: ivory;
+  position: relative;
+}
+
+.menu__list {
+  border: 0.1rem solid #c1e8fa;
+}
+
+.menu__link {
+  display: block;
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: #87c1fa;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #87c1fa;
+
+  &:last-child {
+    border: 0;
+  }
+}
