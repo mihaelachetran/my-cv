@@ -6,8 +6,8 @@
 
 .menu__list {
   border-radius: 1rem;
-  // border: 0.2rem solid #c1e8fa;
-  border: 0.2rem solid #0d0e63;
+  border: 0.1rem solid #0d0e63;
+  box-shadow: 2px 2px #3399ff;
 }
 
 .menu__link {
@@ -15,7 +15,7 @@
   padding: 1rem;
   font-size: 2rem;
   text-decoration: none;
-  border-bottom: 0.2rem solid #0d0e63;
+  border-bottom: 0.1rem solid #0d0e63;
   text-shadow: 1.2px 1.2px #3399ff;
   color: #0d0e63;
 
