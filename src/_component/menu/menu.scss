@@ -1,22 +1,41 @@
 .menu {
-  padding: 2rem;
-  // background-color: ivory;
   position: relative;
+  padding: 2rem;
+  background-color: #c1e8fa;
 }
 
 .menu__list {
-  border: 0.1rem solid #c1e8fa;
+  border-radius: 1rem;
+  // border: 0.2rem solid #c1e8fa;
+  border: 0.2rem solid #0d0e63;
 }
 
 .menu__link {
   display: block;
   padding: 1rem;
-  font-size: 2.5rem;
-  color: #87c1fa;
+  font-size: 2rem;
   text-decoration: none;
-  border-bottom: 0.1rem solid #87c1fa;
+  border-bottom: 0.2rem solid #0d0e63;
+  text-shadow: 1.2px 1.2px #3399ff;
+  color: #0d0e63;
 
   &:last-child {
     border: 0;
   }
+}
+
+.menu__label {
+  padding: 3rem;
+}
+
+.menu__go-to {
+  background-color: #c1e8fa;
+  color: #0d0e63;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
 }
