@@ -6,7 +6,6 @@
 
 .achievement {
   background-image: linear-gradient(to bottom, #99ccff 0%, #ff99cc 100%);
-  margin-top: 2px;
 }
 
 .achievement__title {
@@ -24,7 +23,7 @@
 .achievement__card {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  border-bottom: 0.2rem solid #9fbfdf;
+  border-bottom: 0.5rem solid #9fbfdf;
   display: flex;
   flex-wrap: wrap;
 

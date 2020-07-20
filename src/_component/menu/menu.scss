@@ -7,7 +7,7 @@
 .menu__list {
   border-radius: 1rem;
   border: 0.1rem solid #0d0e63;
-  box-shadow: 2px 2px #3399ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
 .menu__link {
@@ -16,7 +16,7 @@
   font-size: 2rem;
   text-decoration: none;
   border-bottom: 0.1rem solid #0d0e63;
-  text-shadow: 1.2px 1.2px #3399ff;
+  text-shadow: 1px 1px #3399ff;
   color: #0d0e63;
 
   &:last-child {
@@ -35,7 +35,7 @@
   bottom: 0.5rem;
   right: 0.5rem;
   font-size: 2rem;
-  padding: 0.7rem;
-  border-radius: 0.7rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
 }

@@ -1,0 +1,67 @@
+.landscape,
+.landscape__input {
+  display: none;
+}
+
+.landscape {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c1e8fa;
+  transition: 0.25s;
+}
+
+.landscape__button {
+  display: block;
+  background-color:#c1e8fa;
+  color: #0d0e63;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border: 0.1rem solid #0d0e63;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+}
+
+.landscape__description {
+  padding: 1.5rem 0;
+}
+
+  @media (orientation: landscape) {
+    .landscape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0d0e63;
+      font-size: 1.5rem;
+    }
+
+    .landscape__list {
+      list-style-type: disc;
+    }
+    
+    .landscape__message--show {
+      display: none;
+    }
+    
+    .landscape__message--hide {
+      display: block;
+    }
+
+    #landscape:checked + .landscape {
+      top: -100%;
+      
+      .landscape__message--show {
+        display: block;
+      }
+      
+      .landscape__message--hide {
+        display: none;
+      }
+    }
+  }
